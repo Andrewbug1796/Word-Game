@@ -9,7 +9,7 @@ public class WordGuessGame : MonoBehaviour
     public string correctWord;
     public string[] words;
     public string lettersGuessed = "";
-    public int attemptsRemaining = 3;
+    public int attemptsRemaining = 10;
 
     [Header("UI References (TextMeshPro)")]
     public TMP_Text wordText;
@@ -66,7 +66,7 @@ public class WordGuessGame : MonoBehaviour
     public void ResetGame()
     {
         ChooseWord();
-        attemptsRemaining = 3;
+        attemptsRemaining = 10;
         lettersGuessed = "";
         gameOver = false;
 
